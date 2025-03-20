@@ -1,3 +1,6 @@
+import math
+
+
 """var = "hola"    
 var2 = "adios"
 var3 = "hasta luego"
@@ -41,8 +44,21 @@ print(area)"""
 
 
 #Ejercicio 4
-numero = calculo("introduce el numero")
+"""numero = calculo("introduce el numero")
 result = numero % 2
 if ( result == 0):
     print("Es par")
-else: print("Es impar")
+else: print("Es impar")"""
+
+#Ejercicio 6
+Base = calculo("Dame el valor de la base del triangulo")
+Altura = calculo("Dame el valor de la altura del triangulo")
+
+Area = Base*Altura/2
+print("El area del triangulo es: " + str(Area)) 
+Hipotenusa = math.pow(Base, 2) + math.pow(Altura,2)
+Hipotenusa = math.sqrt(Hipotenusa)
+Perimetro = Base + Altura + Hipotenusa
+print("El perimetro del triangulo es: " + str(Perimetro))
+
+
